@@ -1,0 +1,24 @@
+---
+title: "Exemplo de trabalho final"
+date: "`r Sys.Date()`"
+output:
+  rmdformats::readthedown:
+    highlight: kate
+---
+
+```{r setup, include=FALSE}
+## Global options
+knitr::opts_chunk$set(cache = TRUE)
+```
+
+
+```{r}
+# install.packages("remotes")
+# remotes::install_github("cienciadedatos/dados")
+
+filmes_da_pixar <- dados::pixar_filmes
+
+dplyr::glimpse(filmes_da_pixar)
+```
+
+
